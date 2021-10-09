@@ -40,6 +40,10 @@ $(document).ready(function() {
             }
         }
     });
+    $('.faq-item').click(function(e){
+        e.preventDefault()
+        $(this).toggleClass("active")
+    });
     var owlNovinky = $('.novinky-slider');
     owlNovinky.owlCarousel({
         loop:true,

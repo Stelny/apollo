@@ -149,6 +149,7 @@
                     </nav>
                 </div>
             </div>
+            
         </div>
         <div class="account">
             <div class="container">
@@ -157,12 +158,12 @@
                         <div class="account-nav">
                             <h1>Môj účet</h1>
                             <ul>
-                                <li class="active">
+                                <li>
                                     <a href=''>
                                         Nastavenia účtu
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href=''>
                                         Objednávky
                                     </a>
@@ -181,114 +182,92 @@
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-9">
-                        <div class="account-content">
-                            <div class="account-content-profile">
-                                <div class="account-profile-heading">
-                                    <div class="account-profile-heading-profile">
-                                        <img src='img/profile-pic.png' alt='profile pic' />
+                        <div class="account-orders">
+                            <h2>Objednávky</h2>
+                            <div class='order-history-container w-100'>
+                                <div class='order-history-titles'>
+                                    <h3>ID objednávky</h3>
+                                    <h3>Dátum</h3>
+                                    <h3>Cena</h3>
+                                    <h3>Stav</h3>
+                                    <h3></h3>
+                                </div>
+                                <div class='order-history-box align-items-lg-center'>
+                                    <div class='order-history-values '>
+                                        <p class='order-history-box-title'>ID objednávky</p>
+                                        <p class='order-history-box-value'>#516584</p>
                                     </div>
-                                    <div class="account-profile-heading-text">
-                                        <span class="name">Janko Hraško</span>
-                                        <span>janko.hrasko@gmail.com</span>
+                                    <div class='order-history-values'>
+                                        <p class='order-history-box-title'>Dátum</p>
+                                        <p class='order-history-box-value'>19.11.2003</p>
                                     </div>
-                                    <div class="account-profile-heading-but">
-                                        <a href='' class="btn-black">Zmeniť foto</a>
+                                    <div class='order-history-values'>
+                                        <p class='order-history-box-title'>Cena</p>
+                                        <p class='order-history-box-value'>200E</p>
+                                    </div>
+                                    <div class='order-history-values'>
+                                        <p class='order-history-box-title'>Stav</p>
+                                        <p class='order-history-box-value'>
+                                            <span class='order-history-status green'>Zaplatené</span>
+                                        </p>
+                                    </div>
+                                    <div class='order-history-values d-flex justify-content-start'>
+                                        <button class='btn-clear' type='button' data-toggle='modal' data-target='#orderDetailModal{{$key}}'>Detail
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="account-content-form">
-                                <form>
-                                    <h2>Osobné údaje</h2>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
+                                <div class='modal fade order-detail-modal' id='orderDetailModal{{$key}}' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                                    <div class='modal-dialog modal-dialog-centered' role='document'>
+                                        <div class='modal-content'>
+                                            <div class='modal-header border-0 pb-0'>
+                                                <h5 class='modal-title' id='exampleModalLabel'>Detail objednávky</h5>
+                                                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                                    <span class='icon icon-close-red'></span>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Cau</label>
-                                                <div class="date-select">
-                                                    <select>
-                                                        <option>
-                                                            28
-                                                        </option>
-                                                    </select>
-                                                    <select class="w-50">
-                                                        <option>
-                                                            November
-                                                        </option>
-                                                    </select>
-                                                    <select>
-                                                        <option>
-                                                            2020
-                                                        </option>
-                                                    </select>
+                                            <div class='modal-body'>
+                                                <div class='order-detail-items'>
+                                                    <div class='order-detail-item'>
+                                                        <img src='{{$item->image}}' alt='' class='order-detail-item-img img-fluid'>
+                                                        <div class='order-detail-item-text'>
+                                                            <h3 class='order-detail-item-title'>{{$item->name}}</h3>
+                                                            <h4 class='order-detail-item-price'>{{$item->quantity}}ks = <span class='text-green'>{{$item->quantity * $item->retail_price_with_iva}}</span>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='order-history-box border-0 mb-0'>
+                                                    <div class='order-history-values'>
+                                                        <p class='order-history-box-title'>Číslo objednávky</p>
+                                                        <p class='order-history-box-value'>{{$order->getIdentifier()}}</p>
+                                                    </div>
+                                                    <div class='order-history-values'>
+                                                        <p class='order-history-box-title'>Dátum objednávky</p>
+                                                        <p class='order-history-box-value'>{{$order->createdTime()}}</p>
+                                                    </div>
+                                                    <div class='order-history-values'>
+                                                        <p class='order-history-box-title'>Cena objednávky</p>
+                                                        <p class='order-history-box-value'>{{$order->totalPriceWithPS()}} €</p>
+                                                    </div>
+                                                    <div class='order-history-values'>
+                                                        <p class='order-history-box-title'>Stav objednávky</p>
+                                                        <p class='order-history-box-value'><span class='order-history-status red'>{{$order->status()}}</span></p>
+                                                    </div>
+                                                    <div class='order-history-values'>
+                                                        <p class='order-history-box-title'>Stav objednávky</p>
+                                                        <p class='order-history-box-value'><span class='order-history-status green'>{{$order->status()}}</span>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
                                     </div>
-                                    <h2 class="mt-4">Adresa</h2>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mt-4">
-                                            <button class="btn-default">Uložit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="footer bg-dark">

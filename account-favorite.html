@@ -157,7 +157,7 @@
                         <div class="account-nav">
                             <h1>Môj účet</h1>
                             <ul>
-                                <li class="active">
+                                <li>
                                     <a href=''>
                                         Nastavenia účtu
                                     </a>
@@ -167,7 +167,7 @@
                                         Objednávky
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href=''>
                                         Obľúbené
                                     </a>
@@ -181,110 +181,224 @@
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-9">
-                        <div class="account-content">
-                            <div class="account-content-profile">
-                                <div class="account-profile-heading">
-                                    <div class="account-profile-heading-profile">
-                                        <img src='img/profile-pic.png' alt='profile pic' />
+                        <div class="row vybraneProdukty">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
                                     </div>
-                                    <div class="account-profile-heading-text">
-                                        <span class="name">Janko Hraško</span>
-                                        <span>janko.hrasko@gmail.com</span>
-                                    </div>
-                                    <div class="account-profile-heading-but">
-                                        <a href='' class="btn-black">Zmeniť foto</a>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="account-content-form">
-                                <form>
-                                    <h2>Osobné údaje</h2>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
                                             </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Cau</label>
-                                                <div class="date-select">
-                                                    <select>
-                                                        <option>
-                                                            28
-                                                        </option>
-                                                    </select>
-                                                    <select class="w-50">
-                                                        <option>
-                                                            November
-                                                        </option>
-                                                    </select>
-                                                    <select>
-                                                        <option>
-                                                            2020
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
                                         </div>
                                     </div>
-                                    <h2 class="mt-4">Adresa</h2>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-div">
-                                                <label>Test</label>
-                                                <input type="text" name="firstName" class="form-control">     
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mt-4">
-                                            <button class="btn-default">Uložit</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
+                                <div class="product-box">
+                                    <a href="#" class="d-block text-center w-100">
+                                        <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
+                                    </a>
+                                    <div class="slevaSticker">
+                                        <p class="selvaLabel">ZĽAVA</p>
+                                        <p class="slevaProcento">28%</p>
+                                    </div>
+                                    <div class="productInfo">
+                                        <p class="znacka">Značka</p>
+                                        <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
+                                        <div class="hodnoceni d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <span class="starsGrey">★★★★★</span>
+                                                <span>★★★★★</span>
+                                                <span class="starsGold" style="width: 90%;">★★★★★</span>
+                                            </div>
+                                            <p class="hodnoceniCislo ml-1">5</p>
+                                        </div>
+                                        <div class="cena d-flex align-items-center mt-2">
+                                            <p class="aktualniCena">1 016,99 €</p>
+                                            <p class="ml-2 predchoziCena">1 299 €</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="labelVyrobce">Výrobca:&nbsp;</p>
+                                            <a href="#" class="vyrobce">Gia Marguez</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
