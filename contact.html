@@ -1,0 +1,475 @@
+
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.typekit.net/nbd2wyc.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nouislider.css">
+        <title>Apollostore</title>
+    </head>
+    <body>
+        <div class="header bg-dark">
+            <div class="top-header">
+                <div class="container borderBottom d-flex justify-content-between align-items-center pb-2 d-lg-none">
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="navbar-cart">
+                        <a href="#">
+                            <img src="icons/cart.svg" alt="cart">
+                        </a>
+                        <span class="bg-white text-center">0</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center pt-3 pb-1">
+                        <div class="navbar-brand d-none d-lg-block">
+                            <a href="#">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="navbar-search">
+                            <form class="bg-white d-flex flex-row align-items-center">
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-toggle" type="button" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Všetko
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="searchDropdown">
+                                        <a class="dropdown-item" href="#">Domov</a>
+                                        <a class="dropdown-item" href="#">Fashion</a>
+                                        <a class="dropdown-item" href="#">Bytové doplňky</a>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="Hledat medzi 350 000 produkty" class="form-control">
+                                <div class="header-search-icon">
+                                    <button>
+                                        <img src="icons/search.png" alt="search" class="img-fluid">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-language d-flex flex-row align-items-center">
+                            <div class="current-language d-flex justify-content-center align-items-center">
+                                <img src="icons/cz.svg" alt="cz" class="img-fluid">
+                            </div>
+                            <div class="dropdown-categories">
+                                <div class="dropdown-toggle text-white" type="button" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    CZ
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="searchDropdown">
+                                    <a class="dropdown-item" href="#">SK</a>
+                                    <a class="dropdown-item" href="#">EN</a>
+                                    <a class="dropdown-item" href="#">DE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-account d-flex flex-row">
+                            <img src="icons/moj_ucet.svg" alt="moj ucet" class="mr-2">
+                            <div class="d-flex flex-column">
+                                <div class="moj-ucet">
+                                    <a href="#" class="text-white">Môj účet</a>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <a href="#" class="text-white">Přihlásit</a>
+                                    <span class="text-white">/</span>
+                                    <a href="#" class="text-white">Registrovat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-searchMobile d-lg-none ml-auto">
+                            <a href="#">
+                                <img src="icons/search2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="navbar-cart d-none d-lg-block">
+                            <a href="#">
+                                <img src="icons/cart.svg" alt="cart">
+                            </a>
+                            <span class="bg-white text-center">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-header">
+                <div class="container">
+                    <nav class="navbar p-0 navbar-expand">
+                        <div class="collapse navbar-collapse" id="navbarMain">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Domov</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Fashion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bytové doplňky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hračky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Šperky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Parfémy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Elektro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Knihy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hudební nástroje</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Svíčky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Škola</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Záhrada</a>
+                                </li>
+                                <li class="nav-item ml-xl-auto">
+                                    <a class="nav-link nav-link--whitebg" href="#">Prodáejte u nás</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="contact-content mw-1170 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-box">
+                                <h1>Kontaktný formulár</h1>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="input-div">
+                                                <label>Meno</label>
+                                                <input type='text' class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-div">
+                                                <label>Meno</label>
+                                                <input type='text' class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-div">
+                                                <label>Meno</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-right">
+                                            <button class="btn-clear big">Odoslať</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="py-4">
+                                <h2>Adresa</h2>
+                                <p>44 Shirley Ave, West Chicago, IL 60185 Angelo (123) 569-4371E demo@apollostore.com</p>
+                                <div class="pt-4">
+                                    <div class="contact-icon">
+                                        0944 123 456
+                                    </div>
+                                    <div class="contact-icon">
+                                        info@apollostore.sk
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h3>Apollo store shop na mape</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.3872117445044!2d-0.058384984093925826!3d51.37756112800898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487600f0649f0389%3A0xcff23cb1b9878553!2s44%20Shirley%20Ave%2C%20Croydon%20CR0%208SJ%2C%20Velk%C3%A1%20Brit%C3%A1nie!5e0!3m2!1scs!2scz!4v1633860547945!5m2!1scs!2scz" width="9000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer bg-dark">
+            <div class="container footer-container">
+                <div class="footer-menu">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h3>Kontakt</h3>
+                            <p>Závodu míru 974/66a <br> 360 17 Karlovy Vary <br> Tel.: +420 353 433 811</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h3>Kategórie</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Šport</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sviečky</a>
+                                </li>
+                                <li>
+                                    <a href="#">Batihy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Spotrebiče</a>
+                                </li>
+                                <li>
+                                    <a href="#">Výpredaj</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h3>Naša spoločnosť</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Produkty</a>
+                                </li>
+                                <li>
+                                    <a href="#">O nás</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kontakt</a>
+                                </li>
+                                <li>
+                                    <a href="#">Obchodné podmienky</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h3>Môj účet</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Prihlásiť / Registrovať</a>
+                                </li>
+                                <li>
+                                    <a href="#">Obľúbené produkty</a>
+                                </li>
+                                <li>
+                                    <a href="#">Objednávky</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-top: 1px solid #455261;" class="mt-5 mb-5"></div>
+                <h3>Všetky kategórie</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Fashion</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                            <div><a href="#">bobo</a></div>
+                            <div><a href="#">consectetur</a></div>
+                            <div><a href="#">Apid</a></div>
+                            <div><a href="#">sed do</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Bytové doplnky</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Hračky</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                            <div><a href="#">bobo</a></div>
+                            <div><a href="#">consectetur</a></div>
+                            <div><a href="#">Apid</a></div>
+                            <div><a href="#">sed do</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Šperky</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Parfémy</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                            <div><a href="#">bobo</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Elektro</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Knihy</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Hudební nástroje</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Svíčky</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                            <div><a href="#">bobo</a></div>
+                            <div><a href="#">consectetur</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Školní potřeby</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="#" class="vsetkykat-h">Záhradní potřeby</a>
+                        <div class="vsetkykatBox">
+                            <div><a href="#">Nakio</a></div>
+                            <div><a href="#">Sumsang</a></div>
+                            <div><a href="#">Syno</a></div>
+                            <div><a href="#">Bleryback</a></div>
+                            <div><a href="#">Usas</a></div>
+                            <div><a href="#">TCH</a></div>
+                            <div><a href="#">Popo</a></div>
+                            <div><a href="#">Lovone</a></div>
+                            <div><a href="#">Alcatel</a></div>
+                            <div><a href="#">Putang</a></div>
+                            <div><a href="#">inna</a></div>
+                            <div><a href="#">bobo</a></div>
+                            <div><a href="#">consectetur</a></div>
+                            <div><a href="#">Apid</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container footer-container">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <p><b>Apollo store</b> sodales pretium justo et volutpat. Maecenas semper lacinia augue, id max imus lectus tincidunt ut. Aenean ac aliquam massa ut lacinia est. Praesent ante diam, varius eget velit sit amet, fauc ibus feugiat arcu. Proin fermentum semper bibendum.</p>
+                        <p>© Copyright 2021 Všetky práva vyhradené</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="img/platebne_metody.png" alt="platebne_metody" class="ml-md-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/javascript.js"></script>
+    </body>
+    </html>
+    
